@@ -55,7 +55,7 @@ export async function initializeDatabase() {
         });
 
 
-        const dbName = process.env.DB_DATABASE || 'S2_R4_AT1';
+        const dbName = process.env.DB_DATABASE || 'S2_R4-AT1';
 
 
         await tempConnection.query(`CREATE DATABASE IF NOT EXISTS \`${dbName}\`;`);
