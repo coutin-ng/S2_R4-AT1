@@ -96,7 +96,7 @@ export async function initializeDatabase() {
         `);
 
         await tempConnection.query(`
-            CREATE TABLE IF NOT EXISTS pedidos (
+            CREATE TABLE IF NOT EXISTS itens_pedidos (
                 Id INT AUTO_INCREMENT PRIMARY KEY,
                 PedidoId INT,
                 ProdutoId INT,
